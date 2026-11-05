@@ -1,0 +1,14 @@
+name = "northline-chainkit"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[vars]
+PAY_TO = "0xD4F04c07037c42F84e5B15A7843e58e1C6FccC96"  # revenue wallet
+NETWORK = "eip155:8453"
+# payai = no key, free starter allowance. Switch to "cdp" (and set CDP_API_KEY_ID / CDP_API_KEY_SECRET
+# with `wrangler secret put`) to get indexed in the CDP x402 Bazaar after the first settled call.
+FACILITATOR = "payai"
+SERVICE_NAME = "Northline ChainKit"
+PUBLIC_BASE_URL = "https://northline-chainkit.northline-c86.workers.dev"
